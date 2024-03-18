@@ -33,14 +33,14 @@ namespace GameLogic
             TotalCount++;
         }
 
-        //public int Red(PieceType type)
-        //{
-        //    return redCount[type];
-        //}
+        public int Red(PieceType type)
+        {
+            return redCount[type];
+        }
 
-        //public int Black(PieceType type)
-        //{
-        //    return blackCount[type];
-        //}
+        public int Black(PieceType type)
+        {
+            return blackCount[type];
+        }
     }
 }

@@ -2,6 +2,7 @@ using GameLogic;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
@@ -117,17 +118,6 @@ public class GameManager : MonoBehaviour
     {
         gameState = new GameState();
         UpdatePieces();
-    }
-
-    public void Cancel()
-    {
-        gameState.CancelMove();
-        UpdatePieces();
-    }
-
-    public void ExitGame()
-    {
-        Application.Quit();
     }
 
     private void OnClickObject(GameObject gameObject)

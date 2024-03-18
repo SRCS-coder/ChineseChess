@@ -17,10 +17,10 @@ namespace GameLogic
                 position.Column + direction.ColumnDelta);
         }
 
-        //public static bool IsSame(Position position1, Position position2)
-        //{
-        //    return position1.Row == position2.Row && position1.Column == position2.Column;
-        //}
+        public static bool IsSame(Position position1, Position position2)
+        {
+            return position1.Row == position2.Row && position1.Column == position2.Column;
+        }
 
         public static Position Middle(Position position1, Position position2)
         {

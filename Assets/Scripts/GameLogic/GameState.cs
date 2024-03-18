@@ -9,15 +9,11 @@ namespace GameLogic
         public PieceColor CurrentColor { get; private set; }
         public Result Result { get; private set; }
 
-        public Stack<MoveHistory> MoveHistories { get; }
-
         public GameState()
         {
             Board = Board.Initial();
             CurrentColor = PieceColor.Red;
             Result = null;
-
-            MoveHistories = new Stack<MoveHistory>();
         }
 
         public IEnumerable<Move> LegalMovesForPiece(Position position)
@@ -45,23 +41,7 @@ namespace GameLogic
 
         public void MakeMove(Move move)
         {
-            MoveHistory moveHistory = move.Execute(Board);
-            MoveHistories.Push(moveHistory);
-
-            CurrentColor = CurrentColor.Opponent();
-            CheckForGameOver();
-        }
-
-        public void CancelMove()
-        {
-            if (MoveHistories.Count == 0)
-            {
-                return;
-            }
-
-            MoveHistory moveHistory = MoveHistories.Pop();
-            moveHistory?.Move.Cancel(Board, moveHistory.EatenPiece);
-
+            move.Execute(Board);
             CurrentColor = CurrentColor.Opponent();
             CheckForGameOver();
         }
@@ -78,6 +58,11 @@ namespace GameLogic
             {
                 Result = Result.Draw(EndReason.InsufficientMaterial);
             }
+        }
+
+        public bool IsGameOver()
+        {
+            return Result != null;
         }
     }
 }

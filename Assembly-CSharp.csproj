@@ -78,7 +78,6 @@
     <Compile Include="Assets\Scripts\GameLogic\Pieces\Soldier.cs" />
     <Compile Include="Assets\Scripts\GameLogic\Position.cs" />
     <Compile Include="Assets\Scripts\GameLogic\Pieces\Elephant.cs" />
-    <Compile Include="Assets\Scripts\GameLogic\MoveHistory.cs" />
     <Compile Include="Assets\Scripts\GameLogic\PieceType.cs" />
     <Compile Include="Assets\Scripts\TargetPositionBehavior.cs" />
     <Compile Include="Assets\Scripts\GameLogic\Pieces\Chariot.cs" />

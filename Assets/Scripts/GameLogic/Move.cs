@@ -11,23 +11,11 @@
             ToPosition = to;
         }
 
-        public MoveHistory Execute(Board board)
+        public void Execute(Board board)
         {
             Piece piece = board[FromPosition];
-            Piece eatenPiece = board[ToPosition];
-
             board[ToPosition] = piece;
             board[FromPosition] = null;
-
-            return new MoveHistory(this, eatenPiece);
-        }
-
-        public void Cancel(Board board, Piece eatenPiece)
-        {
-            Piece piece = board[ToPosition];
-
-            board[FromPosition] = piece;
-            board[ToPosition] = eatenPiece;
         }
 
         public bool IsLegal(Board board)
