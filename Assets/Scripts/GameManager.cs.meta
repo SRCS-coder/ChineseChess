@@ -1,0 +1,25 @@
+fileFormatVersion: 2
+guid: f162b80616f00754580d3c57ccd2813b
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - BlackGeneralPrefab: {instanceID: 0}
+  - BlackAdvisorPrefab: {instanceID: 0}
+  - BlackElephantPrefab: {instanceID: 0}
+  - BlackChariotPrefab: {instanceID: 0}
+  - BlackHorsePrefab: {instanceID: 0}
+  - BlackCannonPrefab: {instanceID: 0}
+  - BlackSoldierPrefab: {instanceID: 0}
+  - RedGeneralPrefab: {instanceID: 0}
+  - RedAdvisorPrefab: {instanceID: 0}
+  - RedElephantPrefab: {instanceID: 0}
+  - RedChariotPrefab: {instanceID: 0}
+  - RedHorsePrefab: {instanceID: 0}
+  - RedCannonPrefab: {instanceID: 0}
+  - RedSoldierPrefab: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
